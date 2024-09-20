@@ -1,0 +1,8 @@
+skip WS '\s+'
+skip COMMENT '#.*$'
+token THIS 'this'
+token THAT 'that'
+token THE 'the'
+token OTHER 'other'
+token THING 'thing'
+token ID '\w+'

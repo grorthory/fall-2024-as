@@ -1,0 +1,15 @@
+QUESTION 3
+
+public Goo(Var VAR, Silly silly)
+
+QUESTION 4
+
+public many(Rule rule, Of OF, Stuff stuff)
+
+QUESTION 5
+
+public classes(CSIT c1, CSIT c2, CSIT c3)
+
+QUESTION 6
+
+<var> ::= TOKEN <foo>

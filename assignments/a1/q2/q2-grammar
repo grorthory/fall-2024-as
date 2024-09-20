@@ -1,0 +1,6 @@
+skip WS '\s+'
+skip COMMENT '#.*$'
+token STRING '\'.*\''
+token SKIP 'skip'
+token TOKEN 'token'
+token TOKENNAME '[A-Z]+'
