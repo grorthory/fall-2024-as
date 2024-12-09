@@ -1,0 +1,15 @@
+# grammar for a list of comma-separated numbers
+
+skip WS '\s+'
+token NUM '\d+'
+token LEFTBRACKET '\['
+token RIGHTBRACKET '\]'
+token COMMA ','
+
+%
+
+<lon> ::= LEFTBRACKET <nums> RIGHTBRACKET
+<nums>:NumsNode ::= <NUM> <morenums>
+<nums>:NumsNull ::=
+<morenums>:MoreNumsNode ::= COMMA <NUM> <morenums>
+<morenums>:MoreNumsNull ::=
