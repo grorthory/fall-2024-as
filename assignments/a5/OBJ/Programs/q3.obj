@@ -8,7 +8,7 @@ define B = class extends A
 
   % Modify so field x is assigned value in the passed x.  Be careful not to
   % assign to a subclass's x.
-  method foo = proc(x) set x = x
+  method foo = proc(x) set <this>x = x
 end
 
 define C = class extends B
@@ -18,3 +18,6 @@ define C = class extends B
 end
 
 % Add code to test your solution
+
+define test=new C
+.<test>foo(5)
